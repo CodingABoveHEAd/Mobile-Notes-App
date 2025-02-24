@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/tutorialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Tutorial"
+        android:textSize="18sp"
+        android:backgroundTint="#06A641"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/informationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tutorialButton"
+        android:layout_marginBottom="20dp"
+        android:text="Information"
+        android:textSize="18sp"
+        android:backgroundTint="#D51C0F"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/jsonContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/informationButton"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="#1A1A1A"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:scrollbars="vertical"
+        android:text="Click a button to know about Tutorial or Information." />
+
+</RelativeLayout>

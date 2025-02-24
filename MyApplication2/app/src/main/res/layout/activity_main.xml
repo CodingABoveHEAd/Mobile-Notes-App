@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline"
+        android:layout_centerInParent="true">
+
+   </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbarofmainactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gotoforgotpassword"
+        android:layout_marginTop="20dp"
+        android:outlineAmbientShadowColor="@color/amethyst"
+        android:visibility="invisible"
+        />
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="30dp"
+     android:layout_marginRight="30dp"
+     android:layout_above="@id/centerline"
+     android:layout_marginBottom="150dp"
+     android:orientation="vertical">
+
+     <TextView
+         android:id="@+id/welcome"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Welcome back !"
+         android:textSize="30sp"
+         android:paddingLeft="30dp"
+         android:textStyle="bold"
+         android:textColor="#CBFFFEFE">
+
+     </TextView>
+
+     <TextView
+         android:id="@+id/scroll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Log In To Continue                         Log In To Continue  "
+         android:textColor="#06A641"
+         android:textStyle="bold"
+         android:singleLine="true"
+         android:ellipsize="marquee"
+         android:marqueeRepeatLimit="marquee_forever"
+         android:scrollHorizontally="true"
+         android:textSize="23sp">
+
+     </TextView>
+
+
+ </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email"
+        android:textColorHint="@color/aliceblue"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/aliceblue"
+            android:textColorHint="@color/aliceblue">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#FFFFFF"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpassword"
+            android:hint="Enter your Password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/aliceblue"
+            android:textColorHint="#FFFFFF">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="359dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Log In"
+            android:textColor="#D51C0F"
+            android:textSize="28sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gotoforgotpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Forgot Password"
+        android:layout_below="@id/login"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/aliceblue"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/gotosignup"
+        android:layout_width="359dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Sign Up"
+
+            android:textColor="#D51C0F"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jsonParseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#25050505"
+        android:lineSpacingExtra="4dp"
+        android:overScrollMode="ifContentScrolls"
+        android:padding="10dp"
+        android:paddingTop="80dp"
+        android:text="About the app..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
